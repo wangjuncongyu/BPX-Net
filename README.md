@@ -18,5 +18,6 @@ Data available via email:wjcy19870122@163.com
 (3) cmd run: python gdm_cross_validation_5folds.py to train gdm stratification
 (4) cmd run: ccrcc_cross_validation_5folds.py to train ccrcc prognsis
 (5) cmd run: aml_cross_validation_5folds.py to train aml treatment response
+note: models are saved at checkpoints, and evluation metrics are saved at results
 ```
 
