@@ -83,39 +83,39 @@ else:
 print('auc:', auc)
 ``` 
 ## Model parameters
--<code>num_variables</code>: int (default=120)  
+- <code>num_variables</code>: int (default=120)  
 input_features
-<br>-<code>bprd_gama</code>: float (default=0.2)  
+<br>- <code>bprd_gama</code>: float (default=0.2)  
 biomarker preservation ratio for BPRD
-<br>-<code>fill_v</code>: int (default=-1)  
+<br>- <code>fill_v</code>: int (default=-1)  
 missing values set to -1
-<br>-<code>anfs_hiden_features</code>: int (default=128)  
+<br>- <code>anfs_hiden_features</code>: int (default=128)  
 the dimension for hiden layers in ANFS
-<br>-<code>anfs_out_activation</code>: str (default = 'tanh')  
+<br>- <code>anfs_out_activation</code>: str (default = 'tanh')  
 the activation function for feature importance
-<br>-<code>anfs_ema_alpha</code>: float (default=0.98)  
+<br>- <code>anfs_ema_alpha</code>: float (default=0.98)  
 EMA weights for updating statistically significant feature importance
-<br>-<code>classifier_name</code>: str (default = 'kan')  
+<br>- <code>classifier_name</code>: str (default = 'kan')  
 decision-maker, optional:kan,transformer,resnet18-50, longformer 
-<br>-<code>classifier_layers</code>: unit (default = None)  
+<br>- <code>classifier_layers</code>: unit (default = None)  
 the depth of decison-maker
-<br>-<code>num_classes</code>: int (default=3)  
+<br>- <code>num_classes</code>: int (default=3)  
 output number of classes
-<br>-<code>prior_knowledge</code>: unit (default = None)  
+<br>- <code>prior_knowledge</code>: unit (default = None)  
 None or preloaded prior feature importance
-<br>-<code>epochs</code>: int (default=100)  
+<br>- <code>epochs</code>: int (default=100)  
 number of epochs for trainng
-<br>-<code>batch_size</code>: int (default=512) 
+<br>- <code>batch_size</code>: int (default=512) 
 number of examples per batch
-<br>-<code>lr</code>: float (default=0.001)  
+<br>- <code>lr</code>: float (default=0.001)  
 learning rate
-<br>-<code>lr_decay_steps</code>: int (default=50)  
+<br>- <code>lr_decay_steps</code>: int (default=50)  
 learning rate decay steps
-<br>-<code>lr_decay_rate</code>: float (default=0.98)  
+<br>- <code>lr_decay_rate</code>: float (default=0.98)  
 learning rate decay rate
-<br>-<code>use_focal_loss</code>: bool (default=True)  
+<br>- <code>use_focal_loss</code>: bool (default=True)  
 if use focal_loss
-<br>-<code>optimizer_name</code>: str (default = 'adamw')  
+<br>- <code>optimizer_name</code>: str (default = 'adamw')  
 optimizer name
-<br>-<code>device</code>: str (default = 'auto')
+<br>- <code>device</code>: str (default = 'auto')
 device:cpu or cuda
