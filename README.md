@@ -103,9 +103,9 @@ the depth of decison-maker
 output number of classes
 - <code>prior_knowledge</code>: unit (default = None)  
 None or preloaded prior feature importance
-- <code>epochs</code>: int (default=100)  
+- <code>epochs</code>: int (default=100)    
 number of epochs for trainng
-- <code>batch_size</code>: int (default=512) 
+- <code>batch_size</code>: int (default=512)  
 number of examples per batch
 - <code>lr</code>: float (default=0.001)  
 learning rate
@@ -117,5 +117,5 @@ learning rate decay rate
 if use focal_loss
 - <code>optimizer_name</code>: str (default = 'adamw')  
 optimizer name
-- <code>device</code>: str (default = 'auto')
+- <code>device</code>: str (default = 'auto')  
 device:cpu or cuda
