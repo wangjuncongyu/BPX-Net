@@ -83,4 +83,21 @@ else:
 print('auc:', auc)
 ``` 
 ## Model parameters
--<code>num_variables</code>
+-<code>num_variables</code>: int (default=120)
+-<code>bprd_gama</code>: float (default=0.2)
+-<code>fill_v</code>: int (default=-1)
+-<code>anfs_hiden_features</code>: int (default=128)
+-<code>anfs_out_activation</code>: str (default = 'tanh')
+-<code>anfs_ema_alpha</code>: float (default=0.98)
+-<code>classifier_name</code>: str (default = 'kan')
+-<code>classifier_layers</code>: unit (default = None)
+-<code>num_classes</code>: int (default=3)
+-<code>prior_knowledge</code>: unit (default = None)
+-<code>epochs</code>: int (default=100)
+-<code>batch_size</code>: int (default=512)
+-<code>lr</code>: float (default=0.001)
+-<code>lr_decay_steps</code>: int (default=50)
+-<code>lr_decay_rate</code>: float (default=0.98)
+-<code>use_focal_loss</code>: bool (default=True)
+-<code>optimizer_name</code>: str (default = 'adamw')
+-<code>device</code>: str (default = 'auto')
