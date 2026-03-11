@@ -82,3 +82,5 @@ else:
                                         y_pred_proba, average='macro', multi_class='ovr')
 print('auc:', auc)
 ``` 
+## Model parameters
+-<code>num_variables</code>
