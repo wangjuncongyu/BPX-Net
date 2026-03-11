@@ -83,7 +83,7 @@ else:
 print('auc:', auc)
 ``` 
 ## Model parameters
--<code>num_variables</code>: int (default=120) 
+-<code>num_variables</code>: int (default=120)  
 input_features
 <br>-<code>bprd_gama</code>: float (default=0.2)  
 biomarker preservation ratio for BPRD
@@ -114,8 +114,8 @@ learning rate decay steps
 <br>-<code>lr_decay_rate</code>: float (default=0.98)  
 learning rate decay rate
 <br>-<code>use_focal_loss</code>: bool (default=True)  
-# if use focal_loss
+if use focal_loss
 <br>-<code>optimizer_name</code>: str (default = 'adamw')  
-# optimizer name
+##### optimizer name
 <br>-<code>device</code>: str (default = 'auto')
 # device:cpu or cuda
