@@ -14,11 +14,11 @@
 Data samples for each cohort can be found at subdir 'datasets' in csv files.Full version of data is vailable via email:wjcy19870122@163.com
 
 ## Installation
-# with pip
+### with pip
 ``` bash
 pip install bpx-net
 ```
-# with conda
+### with conda
 ``` bash
 conda activate your_env_name
 conda install pip
