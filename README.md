@@ -28,7 +28,7 @@ pip install bpx-net
 ## How to use it?
 
 (1) put your data in a csv file with each line for sample, each column for features and the label
-``` bash
+``` python
 from datasets.csv_dataset import CsvDataset
 data_file = ['path/your_data.csv']
 ignores=['feature name'] #feature columns to ignore
@@ -40,7 +40,7 @@ dataset = CsvDataset(data_file,
                             repeat_fews=True) #set true to alliviate data imbalance
 ``` 
 (2) training using custom dataset
-``` bash
+``` python
 from bpx_net import BPXNetClassifier
 import os.path as osp
 import sklearn.metrics as skm
