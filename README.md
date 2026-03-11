@@ -116,6 +116,6 @@ learning rate decay rate
 <br>-<code>use_focal_loss</code>: bool (default=True)  
 if use focal_loss
 <br>-<code>optimizer_name</code>: str (default = 'adamw')  
-##### optimizer name
+optimizer name
 <br>-<code>device</code>: str (default = 'auto')
-# device:cpu or cuda
+device:cpu or cuda
