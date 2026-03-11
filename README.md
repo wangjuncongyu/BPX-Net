@@ -84,35 +84,35 @@ print('auc:', auc)
 ``` 
 ## Model parameters
 -<code>num_variables</code>: int (default=120) 
-# input_features
+input_features
 <br>-<code>bprd_gama</code>: float (default=0.2)  
-# biomarker preservation ratio for BPRD
+biomarker preservation ratio for BPRD
 <br>-<code>fill_v</code>: int (default=-1)  
-# missing values set to -1
+missing values set to -1
 <br>-<code>anfs_hiden_features</code>: int (default=128)  
-# the dimension for hiden layers in ANFS
+the dimension for hiden layers in ANFS
 <br>-<code>anfs_out_activation</code>: str (default = 'tanh')  
-# the activation function for feature importance
+the activation function for feature importance
 <br>-<code>anfs_ema_alpha</code>: float (default=0.98)  
-# EMA weights for updating statistically significant feature importance
+EMA weights for updating statistically significant feature importance
 <br>-<code>classifier_name</code>: str (default = 'kan')  
-# decision-maker, optional:kan,transformer,resnet18-50, longformer 
+decision-maker, optional:kan,transformer,resnet18-50, longformer 
 <br>-<code>classifier_layers</code>: unit (default = None)  
-# the depth of decison-maker
+the depth of decison-maker
 <br>-<code>num_classes</code>: int (default=3)  
-# output number of classes
+output number of classes
 <br>-<code>prior_knowledge</code>: unit (default = None)  
-# None or preloaded prior feature importance
+None or preloaded prior feature importance
 <br>-<code>epochs</code>: int (default=100)  
-# number of epochs for trainng
+number of epochs for trainng
 <br>-<code>batch_size</code>: int (default=512) 
-# number of examples per batch
+number of examples per batch
 <br>-<code>lr</code>: float (default=0.001)  
-# learning rate
+learning rate
 <br>-<code>lr_decay_steps</code>: int (default=50)  
-# learning rate decay steps
+learning rate decay steps
 <br>-<code>lr_decay_rate</code>: float (default=0.98)  
-# learning rate decay rate
+learning rate decay rate
 <br>-<code>use_focal_loss</code>: bool (default=True)  
 # if use focal_loss
 <br>-<code>optimizer_name</code>: str (default = 'adamw')  
