@@ -83,10 +83,10 @@ else:
 print('auc:', auc)
 ``` 
 ## Model parameters
-- <code>num_variables</code>: int (default=120)  
-<p> input_features </p>
+- <code>num_variables</code>: int (default=120)
+  input_features  
 - <code>bprd_gama</code>: float (default=0.2)  
-<p> biomarker preservation ratio for BPRD </p>
+ biomarker preservation ratio for BPRD  
 - <code>fill_v</code>: int (default=-1)  
 > missing values set to -1
 - <code>anfs_hiden_features</code>: int (default=128)  
