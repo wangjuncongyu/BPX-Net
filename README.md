@@ -111,7 +111,7 @@ number of examples per batch
 learning rate
 - <code>lr_decay_steps</code>: int (default=50)  
 learning rate decay steps
-- <code>lr_decay_rate</code>: float (default=0.98)
+- <code>lr_decay_rate</code>: float (default=0.98)  
 learning rate decay rate
 - <code>use_focal_loss</code>: bool (default=True)  
 if use focal_loss
