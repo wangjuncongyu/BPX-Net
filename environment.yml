@@ -1,0 +1,21 @@
+name: bpx_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  # 使用 conda 安装核心科学计算库，通常比 pip 更稳定
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scikit-learn=1.1.0
+  # 针对深度学习的 PyTorch 安装（含 CUDA 支持示例）
+  - pytorch=2.9.1
+  - pytorch-cuda=12.1 # 根据你的 GPU 情况可选，或改为 cpuonly
+  - pip:
+      # 在环境创建最后阶段，以“可编辑模式”安装你本地的 bpx-net
+      - -e .
+      # 如果有其他只在 PyPI 上的库，也可以写在这里
+      # - evaluate
