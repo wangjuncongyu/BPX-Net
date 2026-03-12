@@ -10,6 +10,7 @@
 - Scikit-learn 1.1.0
 - NumPy 1.26.4
 - Pandas 2.2.3
+- einops 0.8.1
 ## dataset
 Data samples for each cohort can be found at subdir 'datasets' in csv files.Full version of data is vailable via email:wjcy19870122@163.com
 
