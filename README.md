@@ -20,8 +20,8 @@ pip install bpx-net
 ```
 #### with conda
 ``` bash
-conda activate your_env_name
-conda install pip
+conda create -n bpx python=3.10 -y
+conda activate bpx
 pip install bpx-net
 ```
 
