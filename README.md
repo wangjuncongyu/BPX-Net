@@ -39,7 +39,13 @@ dataset = CsvDataset(data_file,
                             max_norm=True, #maximum normalization
                             maxv_for_norm=None,#None or numpy array of max values for feature normalization 
                             repeat_fews=True) #set true to alliviate data imbalance
-``` 
+```
+or
+``` python
+dataset = pd.read_csv('path/your_data.csv') 
+X = dataset.iloc[:, :-1].values 
+y = dataset.iloc[:, -1].values
+```
 (2) training using custom dataset
 ``` python
 from bpx_net import BPXNetClassifier
