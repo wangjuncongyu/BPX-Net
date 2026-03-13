@@ -29,23 +29,6 @@ pip install bpx-net
 ## How to use it?
 
 (1) put your data in a csv file with each line for sample, each column for features and the label
-``` python
-from datasets.csv_dataset import CsvDataset
-data_file = ['path/your_data.csv']
-ignores=['feature name'] #feature columns to ignore
-dataset = CsvDataset(data_file,
-                            label_column='label',#specify the column name of label 
-                            ignores=ignores,
-                            max_norm=True, #maximum normalization
-                            maxv_for_norm=None,#None or numpy array of max values for feature normalization 
-                            repeat_fews=True) #set true to alliviate data imbalance
-```
-or
-``` python
-dataset = pd.read_csv('path/your_data.csv') 
-X = dataset.iloc[:, :-1].values 
-y = dataset.iloc[:, -1].values
-```
 (2) training using custom dataset
 ``` python
 from bpx_net import BPXNetClassifier
