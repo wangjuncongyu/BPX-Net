@@ -3,7 +3,7 @@
 
 > This is a deep learning framework for medical multimodal data modeling and biomarker discovery
 
-### my enviroment
+### My enviroment
 - Winows 10
 - Anaconda python 3.10
 - Pytorch 2.9.1+cu128
@@ -11,7 +11,7 @@
 - NumPy 1.26.4
 - Pandas 2.2.3
 - einops 0.8.1
-## dataset
+## Dataset
 Data samples for each cohort can be found at subdir 'datasets' in csv files.Full version of data is vailable via email:wjcy19870122@163.com
 
 ## Installation
