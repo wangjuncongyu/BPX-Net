@@ -1,5 +1,5 @@
 # BPX-Net
-# Code for Biomarker-Preserved Explainable Networks for Disease Diagnosis and Prognosis with Multi-omics
+## Code for Biomarker-Preserved Explainable Networks for Disease Diagnosis and Prognosis with Multi-omics
 
 > This is a deep learning framework for medical multimodal data modeling and biomarker discovery
 
