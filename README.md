@@ -3,7 +3,7 @@
 
 > This is a deep learning framework for medical multimodal data modeling and biomarker discovery
 
-### My enviroment
+## My enviroment
 - Winows 10
 - Anaconda python 3.10
 - Pytorch 2.9.1+cu128
@@ -45,7 +45,7 @@ model = BPXNetClassifier(
     classifier_name=classifier,
     classifier_layers=[dataset.getNumFeatures(), 128, 128, 128],
     num_classes=num_classes,
-    prior_knowledge=prior_weights,
+    prior_knowledge=prior_weights, # If not, you can set None.
     epochs=100,
     batch_size=512,
     lr=0.001,
@@ -109,3 +109,6 @@ if use focal_loss
 optimizer name
 - <code>device</code>: str (default = 'auto')  
 device:cpu or cuda
+
+## Citing us
+If you use BPX-Net, we would appreciate your references to [our paper](https://link.springer.com/article/10.1186/s13040-026-00537-1).
