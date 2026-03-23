@@ -31,7 +31,7 @@ import numpy as np
 from datasets.csv_dataset import CsvDataset
 from sklearn.model_selection import train_test_split
 
-data_file = ['datasets/MMIST-ccRCC.csv']
+data_file = ['data/MMIST-ccRCC.csv']
 label_column = 'vital_status_12' 
 ignores = [] 
 
