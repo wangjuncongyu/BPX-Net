@@ -71,7 +71,11 @@ else:
     auc = skm.roc_auc_score(label_binarize(y_val,classes=[0, 1, 2]), 
                                         y_pred_proba, average='macro', multi_class='ovr')
 print('auc:', auc)
-``` 
+```
+## How to get feature importance
+```python
+EMA = torch.abs(model.network.ANFS.ema)
+```
 ## Model parameters
 - <code>num_variables</code>: int (default=120)  
 number of input_features  
