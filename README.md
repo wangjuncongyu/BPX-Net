@@ -43,10 +43,8 @@ dataset = CsvDataset(
     repeat_fews=False  
 )
 
-X_raw = dataset.samples[:, 0:-1]
+X_norm = dataset.samples[:, 0:-1]
 y = dataset.samples[:, -1]
-
-X_norm = np.where(X_raw == -1, -1, X_raw / dataset.maxv_for_norm)
 
 X_train, X_val, y_train, y_val = train_test_split(
     X_norm, 
