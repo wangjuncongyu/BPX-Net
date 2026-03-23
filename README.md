@@ -72,7 +72,7 @@ else:
                                         y_pred_proba, average='macro', multi_class='ovr')
 print('auc:', auc)
 ```
-## How to get feature importance
+## How to get feature importance?
 ```python
 EMA = torch.abs(model.network.ANFS.ema)
 ```
