@@ -45,7 +45,23 @@ dataset = CsvDataset(
 
 X_norm = dataset.samples[:, 0:-1]
 y = dataset.samples[:, -1]
+```
+or
+```python
+import pandas as pd
+df = pd.read_csv('data/MMIST-ccRCC.csv', encoding='gbk')
 
+if ignores:
+    df = df.drop(columns=ignores)
+
+X_raw = df.drop(columns=[label_column]).values
+y = df[label_column].values
+
+max_vals = np.max(X_raw, axis=0)
+max_vals[max_vals == 0] = 1e-5
+X_norm = np.where(X_raw == -1, -1, X_raw / max_vals)
+```
+```python
 X_train, X_val, y_train, y_val = train_test_split(
     X_norm, 
     y, 
