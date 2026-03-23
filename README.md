@@ -40,7 +40,7 @@ dataset = CsvDataset(
     label_column=label_column,
     ignores=ignores,
     max_norm=True,
-    repeat_fews=False  # 先不进行过采样，split 之后再根据需要处理
+    repeat_fews=False  
 )
 
 X_raw = dataset.samples[:, 0:-1]
