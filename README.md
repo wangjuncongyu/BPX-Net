@@ -25,7 +25,37 @@ conda create -n bpx python=3.10 -y
 conda activate bpx
 pip install bpx-net
 ```
+## Use custom dataset
+```python
+import numpy as np
+from datasets.csv_dataset import CsvDataset
+from sklearn.model_selection import train_test_split
 
+data_file = ['datasets/MMIST-ccRCC.csv']
+label_column = 'vital_status_12' 
+ignores = [] 
+
+dataset = CsvDataset(
+    data_file,
+    label_column=label_column,
+    ignores=ignores,
+    max_norm=True,
+    repeat_fews=False  # 先不进行过采样，split 之后再根据需要处理
+)
+
+X_raw = dataset.samples[:, 0:-1]
+y = dataset.samples[:, -1]
+
+X_norm = np.where(X_raw == -1, -1, X_raw / dataset.maxv_for_norm)
+
+X_train, X_val, y_train, y_val = train_test_split(
+    X_norm, 
+    y, 
+    test_size=0.2,       
+    random_state=42, 
+    stratify=y           
+)
+```
 ## How to use it?
 
 (1) put your data in a csv file with each line for sample, each column for features and the label
