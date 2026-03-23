@@ -26,6 +26,7 @@ conda activate bpx
 pip install bpx-net
 ```
 ## Use custom dataset
+### Use csv_dataset
 ```python
 import numpy as np
 from datasets.csv_dataset import CsvDataset
@@ -46,7 +47,7 @@ dataset = CsvDataset(
 X_norm = dataset.samples[:, 0:-1]
 y = dataset.samples[:, -1]
 ```
-or
+### Use pandas
 ```python
 import pandas as pd
 df = pd.read_csv('data/MMIST-ccRCC.csv', encoding='gbk')
